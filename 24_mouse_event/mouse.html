@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id = "b1">点击</button>
+    <button id = "b2">双击</button>
+    <button id = "b3">按下</button>
+    <button id = "b4">抬起</button>
+
+
+    <script>
+
+        var b1 = document.getElementById("b1");
+        var b2 = document.getElementById("b2");
+        var b3 = document.getElementById("b3");
+        var b4 = document.getElementById("b4");
+
+        b1.onclick = function(){
+            console.log("点击了");
+        }
+        b2.ondblclick = function(){
+            console.log("双击了");
+        }
+        b1.onmousedown = function(){
+            console.log("按下");
+        }
+        b1.onmouseup = function(){
+            console.log("抬起");
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

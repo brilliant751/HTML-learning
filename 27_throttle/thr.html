@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    h3{
+        height: 400px;
+    }
+
+    </style>
+</head>
+<body>
+    <h3>751</h3>
+    <h3>751</h3>
+    <h3>751</h3>
+    <h3>751</h3>
+    <h3>751</h3>
+    <h3>751</h3>
+
+
+    <script>
+
+        function thr(fn, delay){
+            var val = true;
+            return function(){
+                if (!val)
+                    return false;
+                val = false;
+                setTimeout(function(){
+                    fn();
+                    val = true;
+                }, delay);
+            }
+        }
+
+
+    window.onscroll = thr(sH, 2000);
+        
+        function sH(){
+            var scrollTop = document.documentElement.scrollTop;
+            console.log(scrollTop);
+        }
+
+    </script>
+    
+</body>
+</html>

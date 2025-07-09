@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        const { log } = console;
+
+        var honey = "tutuqiu";
+        var qq = "Q7W5Y1";
+
+        log(honey.includes("tuq"));//true
+        log(honey.startsWith("tut"));//true
+        log(qq.endsWith("751"));//false
+
+        var h1 = honey;
+        h1.repeat(3);
+        log(h1);//tutuqiu
+        log(h1.repeat(3));//tutuqiututuqiututuqiu
+
+        h1 = "qiu";
+        log(h1.padStart(7, "tutu"));
+        log(h1.padEnd(6, "xcy"));
+
+        log(qq.at(3));//5
+        log(qq.at(-2));//Y
+
+
+
+
+
+    </script>
+
+    
+</body>
+</html>

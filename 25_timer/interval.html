@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #anm{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div id = "anm"></div>
+
+    <script>
+        var dd = document.getElementById("anm");
+        var opacity = 1;
+        var timer = setInterval(function(){
+            opacity -= 0.05;
+            dd.style.opacity = opacity;
+            if(opacity < 0)
+                clearInterval(timer);
+        },60)
+    </script>
+
+    
+</body>
+</html>

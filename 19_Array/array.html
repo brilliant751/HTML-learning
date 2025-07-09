@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        arr = ["xcy", 751, 211, "小丑鱼", "前夫哥"]
+        console.log(typeof(arr));// object
+        console.log(Array.isArray(arr));// true
+
+        arr.pop();// 会改变原数组
+        console.log(arr);
+        arr.push("loves", 751, 99);// 向后增加
+        console.log(arr);
+
+        arr.shift();// 删除首个元素
+        console.log(arr);
+        arr.unshift(751, "likes", "xcy");
+        console.log(arr);
+
+        console.log(arr.join(" "));// 转为字符串
+
+        arr.reverse();
+        console.log(arr);//[99, 751, 'loves', '小丑鱼', 211, 751, 'xcy', 'likes', 751]
+
+        console.log(arr.indexOf(751));// 1
+        console.log(arr.indexOf(751, 2));// 5
+        console.log(arr.indexOf("qwy"));// -1
+
+
+
+
+
+    </script>
+
+</body>
+</html>

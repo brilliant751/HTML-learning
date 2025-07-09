@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var bride = "qwy";
+        var groom = "xcy";
+        bride.concat(751);//不改变原字符串
+        console.log(bride);//qwy
+        console.log(bride.concat(751));//qwy751
+
+        var story = bride.concat(" loves ", groom);
+        console.log(story);
+
+        /*可以直接用 + 号连接字符串*/
+        story = groom + " loves " + bride;
+        console.log("story");
+
+    </script>
+
+</body>
+</html>

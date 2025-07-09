@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .qq751{
+            width: 200px;
+            height: 200px;
+            margin: 30px;
+            padding: 10px;
+            background-color: red;
+            border: 5px solid black;
+
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+    <img src="1.png" alt="" height="300px">
+    <div class = "qq751">
+        <p>宝宝你好<br>你好宝宝</p>
+    </div>
+    
+
+    <script>
+
+        var cot = document.getElementsByClassName("qq751")[0];
+        //含padding，不含margin
+        console.log(cot.clientWidth);
+        console.log(cot.clientHeight);
+        console.log("------------");
+        //获取视口高度（窗口）
+        console.log(document.documentElement.clientHeight);
+        //获取网页总高度（实际内容）
+        console.log(document.body.clientHeight);
+        console.log("------------");
+        //含溢出
+        console.log(cot.scrollWidth);
+        console.log(cot.scrollHeight);
+        console.log("------------");
+        //包含边框
+        console.log(cot.offsetWidth);
+        console.log(cot.offsetHeight);
+        console.log("------------");
+        //距离边界
+        console.log(cot.offsetLeft);
+        console.log(cot.offsetTop);
+
+
+
+
+    </script>
+
+    
+</body>
+</html>

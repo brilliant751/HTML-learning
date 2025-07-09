@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var a = 100;
+        var b = -50;
+        var x27 = 2.11;
+
+
+        console.log(a);
+        console.log(Math.abs(b));// 50
+
+        console.log(Math.max(10, 30, a, b, 751));// 751
+        console.log(Math.min(10, 30, a, b, 751));// -50
+
+        console.log(Math.floor(x27));// 2
+        console.log(Math.ceil(x27));// 3
+
+        console.log(Math.round(2.499999999999999));//精确度问题
+
+        console.log(Math.random());// 0-1 random
+
+        function Rdm(min = 0, max = 1, is_int = 0)
+        {
+            if (is_int === 1)
+                return Math.floor(Math.random() * (max - min + 1) + min);
+            else if (is_int === 0)
+                return Math.random() * (max - min) + min;
+            else
+                return -1;
+        }
+
+        console.log(Rdm(0, 100, 1));
+        
+
+    </script>
+
+
+</body>
+</html>

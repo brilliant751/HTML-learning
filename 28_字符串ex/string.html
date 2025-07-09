@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        const { log } = console;
+        
+
+        var wz = "https://www.baidu.com";
+        var tx = "超链接";
+        var a1 = '<a href = "' + wz + '">' + tx + '</a>';//内部用双引号不会延长下划线
+        var a2 = `<a href = "${wz}">${tx}</a>`;
+
+        log(a1);
+        log(a2);
+
+
+    </script>
+    
+</body>
+</html>

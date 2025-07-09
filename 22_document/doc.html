@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <b>想说的话</b>
+    <div class="宝宝">宝宝超可爱</div>
+    <p id="751">最喜欢宝宝了</p>
+    <span id="xcy">宝<br>宝<br>我<br>好<br>想<br>你<br>
+    </span>
+
+    <div id="then"></div>
+
+    <script>
+        var t = document.getElementsByTagName("b");
+        var s = document.getElementsByClassName("宝宝");
+        var m = document.getElementById("751");
+        var honey = document.getElementById("xcy");
+        var next = document.getElementById("then");
+        console.log(m.innerHTML);
+        t.innerHTML = "每天都说";
+
+        var all = document.getElementsByTagName("*");
+        console.log(all);
+
+        var s0 = document.createElement("p");
+        var id = document.createAttribute("id");
+        id.value = "qwy";
+        var wish = document.createTextNode("好想快点见到宝宝");
+        s0.appendChild(wish);
+        s0.setAttributeNode(id);
+        next.appendChild(s0);
+
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>

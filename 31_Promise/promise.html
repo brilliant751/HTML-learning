@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "kkk">loading...</div>
+
+    <script>
+        var { log } = console;
+
+        var cot = document.getElementById("kkk");
+
+        function loadImageAsync(url){
+            const prom = new Promise(function(resolve, reject){
+
+                const img = new Image();
+                img.src = url;
+                img.onload = function(){
+                    resolve(img);
+                }
+                img.onerror = function(){
+                    reject(new Error('Could not load image at' + url))
+                }
+            })
+            return prom;
+        }
+
+        const promise = loadImageAsync("https://bkimg.cdn.bcebos.com/pic/4e4a20a4462309f7e9915bbf720e0cf3d6cad6a5?x-bce-process=image/format,f_auto/watermark,image_d2F0ZXIvYmFpa2UyNzI,g_7,xp_5,yp_5,P_20/resize,m_lfit,limit_1,h_1080")
+        promise.then(function(data){
+            //success
+            cot.appendChild(data);
+        },function(error){
+            //fail
+            box.innerHTML = "图片加载失败";
+            log(error);
+        })
+
+
+
+    </script>
+    
+</body>
+</html>
